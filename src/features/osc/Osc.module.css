@@ -1,0 +1,178 @@
+.card {
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  margin: 0 auto;
+}
+
+.contentContainer {
+  padding: 0 32px;
+}
+
+.hero {
+  height: 40vw;
+  min-height: 160px;
+  max-height: 220px;
+  background-image: url("../../images/illustration-hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 32px;
+}
+
+.h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.desc {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  width: fit-content;
+  color: #717fa6;
+}
+
+.planContainer {
+  background-color: #f7f9ff;
+  padding: 15px;
+  display: grid;
+  grid:
+    "mi price price change"
+    /50px 2fr 1fr;
+}
+
+.planContainer :nth-child(1) {
+  grid-area: mi;
+}
+
+.planContainer :nth-child(3) {
+  grid-area: change;
+  align-self: center;
+}
+
+.priceContainer {
+  grid-area: price;
+  padding-left: min(20px, 6%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.annual_plan {
+  font-weight: 900;
+  font-size: 0.875em;
+  line-height: 21px;
+}
+
+.price {
+  color: #717fa6;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 21px;
+}
+
+a {
+  font-size: 13px;
+  font-size: 0.813rem;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #766CF1;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  max-width: 354px;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  border-style: none;
+  color: #fff;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.btn:hover {
+    background: #766CF1;   
+    cursor: pointer;
+}
+
+.buttonContainer,
+.cancelContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.cancelContainer {
+  padding-bottom: 32px;
+}
+
+.cancel:hover,
+.cancelContainer:hover {
+    color: #1F2E55;
+    cursor: pointer;
+}
+
+.cancel {
+  font-weight: 900;
+  font-size: 15px;
+  color: #717fa6;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  line-height: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+  .planContainer {
+    padding: 17px 16px;
+  }
+
+  .priceContainer {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .planContainer {
+    padding: 25px 24px;
+  }
+  .hero {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    margin-bottom: 45px;
+  }
+
+  .desc {
+    margin-top: 17px;
+    margin-bottom: 20px;
+  }
+
+  .contentContainer {
+    padding: 0 48px;
+  }
+
+  .cancelContainer {
+    padding-bottom: 48px;
+  }
+
+  .buttonContainer,
+  .cancelContainer {
+    margin-top: 24px;
+  }
+}
